@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 400px;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="http://www.baidu.com" method="POST">
+        <fieldset>
+            <legend>必填信息</legend>
+            <div>
+                <label for="phone">手机：</label>
+                <input  type="text" 
+                        placeholder="请输入手机号" 
+                        maxlength="11"
+                        name="phone">
+            </div>
+
+            <div>
+                <label for="password">密码：</label>
+                <input  type="password" 
+                        placeholder="请输入密码"
+                        id="password">
+            </div>
+
+            <div>
+                <span>验证码：</span>
+                <input type="text" placeholder="请输入验证码">
+                <input type="button" value="获取验证码">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>选填信息</legend>
+            <div>
+                <label for="photo">照片：</label>
+                <input type="file" id="photo">
+            </div>
+
+            <div>
+                <span>性别：</span>
+                <label for="male">男</label>
+                <input type="radio"  name="sex" id="male" value="male" checked>
+                <label for="female">女</label>
+                <input type="radio"  name="sex" id="female" value="female">
+            </div>
+
+            <div>
+                <span>爱好：</span>
+                <label for="basketball">篮球</label>
+                <input type="checkbox" name="hobbies" id="basketball" checked>
+                <label for="football">足球</label>
+                <input type="checkbox" name="hobbies" id="football">
+                <label for="sing">唱歌</label>
+                <input type="checkbox" name="hobbies" id="sing">
+                <label for="dance">跳舞</label>
+                <input type="checkbox" name="hobbies" id="dance">
+            </div>
+
+            <div>
+                <span>学历：</span>
+                <select name="education" id="" multiple size="2">
+                    <option value="0">小学</option>
+                    <option value="1" selected>初中</option>
+                    <option value="2">高中</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="introduce">简介：</label>
+                <textarea name="introduce" id="" cols="20" rows="10" id="introduce" ></textarea>
+            </div>
+        </fieldset>
+
+        <input type="reset">
+
+        <input type="submit">
+    </form> 
+
+</body>
+</html>

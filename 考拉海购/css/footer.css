@@ -1,0 +1,180 @@
+@charset "UTF-8";
+body {
+    font: 12px/1.5 Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,\5FAE\8F6F\96C5\9ED1,tahoma,simsun,\5b8b\4f53;
+}
+
+article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, u {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.wrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* 这样可以清除浮动 */
+.clear-fix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.service {
+    padding: 49px 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.service .item {
+    width: 233px;
+    float: left;
+    margin: 0 23px;
+}
+
+/* 确保四个div可以处于同一行显示 */
+.service .item:last-child {
+    margin-right: 0;
+}
+
+.service .item .icon {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-right: 18px;
+    float: left;
+    border: 2px solid #d6d6d6;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service .item .title {
+    font-size: 18px;
+}
+
+.service .item .desc {
+    font-size: 14px;
+}
+
+/* guide */
+.guide {
+    padding: 45px 0 90px;
+}
+
+.guide .follow {
+    float: left;
+    padding-right: 40px;
+}
+
+.guide .follow .follow-us {
+    margin-top: 16px;
+}
+
+.guide .follow .follow-us .icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.guide .follow .follow-us .icon-weibo {
+    background-image: url(../img/icon-weibo.png);
+}
+
+.guide .follow .follow-us .icon-wechat {
+    background-image: url(../img/icon-weixin.png);
+}
+
+.guide .guide-list {
+    float: left;
+}
+
+.guide .guide-list, ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.guide .guide-list .item {
+    float: left;
+    width: 110px;
+    padding-left: 21px;
+}
+
+.guide .guide-list .item dl {
+    text-align: center;
+}
+
+.guide .guide-list .item dt {
+    font-size: 18px;
+    margin-bottom: 10px;
+} 
+
+.guide .guide-list .item dd {
+    margin-bottom: 8px;
+}
+
+.guide .guide-list .item dd:hover {
+    text-decoration: underline;
+}
+
+.guide .download {
+    text-align: center;
+}
+
+.guide .download p {
+    margin-top: 8px;
+}
+
+.about {
+    color: #c2c2c2;
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about p {
+    margin-top: 8px;
+}
+
+.about a {
+    color: #c2c2c2;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
+.about .line2 a , .about .line3 a {
+    padding: 0 24px;
+}
+
+.honest {
+    margin-top: 8px;
+}
+
+.honest .icon1 {
+    width: 84px;
+    height: 30px;
+}
+
+.honest .icon2 {
+    width: 80px;
+    height: 30px;
+    margin: 0 12px;
+}
+
+.honest .icon3 {
+    width: 30px;
+    height: 30px;
+}
+

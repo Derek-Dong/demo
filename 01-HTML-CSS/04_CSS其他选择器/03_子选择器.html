@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div元素里面的直接span子元素 */
+        div>span{
+            color: red;
+        }
+
+        /* box类里面的span元素 */
+        .box>span{
+            background-color: pink;
+        }
+
+        /* box类里面的title类 */
+        .box>.title{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <span>文字内容1</span>
+    <div class="box">
+        <span>文字内容2</span>
+        <p>
+            <span>文字内容3</span>
+        </p>
+        <div>
+            <span>文字内容4</span>
+        </div>
+        <span class="title">文字内容5</span>
+        <div class="title">嘿嘿嘿嘿嘿嘿</div>
+    </div>
+    <div>
+        <a href="#">
+            <span>文字内容6</span>
+        </a>
+    </div>
+</body>
+</html>

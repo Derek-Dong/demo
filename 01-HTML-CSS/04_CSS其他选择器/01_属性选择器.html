@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [title]{
+            color:red;
+        }
+
+        [title="div元素 one"]{
+            font-size: 25px;
+        }
+
+        /* 了解一下 */
+        /* title中包含one单词 */
+        [title*="one"]{
+            background-color: blueviolet;
+        }
+
+        /* title以one开头 */
+        [title^="one"]{
+           text-decoration: underline;
+        }
+
+          /* title以one结尾 */
+          [title$="one"]{
+           text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div title="one div元素">我是div元素</div>
+    <p title="p元素">我是p元素</p>
+    <p title="p one">我是p元素</p>
+    <p>我也是p元素</p>
+    <span title="one span元素">我是span元素</span>
+</body>
+</html>

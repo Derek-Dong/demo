@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <form   action="http://www.baidu.com"
+            method="POST"
+            enctype="multipart/form-data">
+        <fieldset>
+            <legend>必填信息</legend>
+            <div>
+                <label for="phone">手机：</label>
+                <input  type="text"
+                        id="phone"
+                        name="phone"
+                        maxlength="11"
+                        placeholder="请输入您的手机号">
+            </div>
+
+            <div>
+                <label for="password">密码：</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div>
+                <label for="validate">验证码：</label>
+                <input type="text" id="validate" name="code">
+                <input type="button" value="获取验证码">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>选填信息</legend>
+            <div>
+                <label for="photo">照片：</label>
+                <input type="file" id="photo" name="photo">
+            </div>
+
+            <div>
+                <span>性别：</span>
+                <label for="male">男</label>
+                <input type="radio" name="sex" id="male" value="male">
+                <label for="female">女</label>
+                <input type="radio" name="sex" id="female" value="female">
+            </div>
+
+            <div>
+                <span>爱好：</span>
+                <label for="sing">唱歌</label>
+                <input type="checkbox" id="sing" name="hobbies" value="sing">
+                <label for="dance">跳舞</label>
+                <input type="checkbox" id="dance" name="hobbies" value="dance">
+                <label for="rap">rap</label>
+                <input type="checkbox" id="rap" name="hobbies" value="rap">
+                <label for="basketball">篮球</label>
+                <input type="checkbox" id="basketball" name="hobbies" value="basketball">
+            </div>
+
+            <div>
+                <span>学历：</span>
+                <select name="education" id="" multiple>
+                    <option value="0">小学</option>
+                    <option value="1">初中</option>
+                    <option value="2">高中</option>
+                    <option value="3">大学</option>
+                </select>
+            </div>
+
+            <label for="introduce">简介：</label>
+            <textarea name="intro" id="introduce" cols="20" rows="5"></textarea>
+        </fieldset>
+
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>

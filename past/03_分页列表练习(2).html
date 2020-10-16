@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #0000CC;
+        }
+        li {
+            display: inline-block;
+        }
+        a {
+            display: inline-block;
+            border: 2px solid skyblue;
+            font-size: 14px;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            margin-right: 5px;
+        }
+        .previous, .next{
+            width: 88px;
+        }
+        a:hover {
+            background-color: #f2f8ff;
+            border: 2px  solid #0000CC;
+        }
+
+        .active {
+            border:none;
+            font-weight: 700;
+        }
+        .active:hover {
+            border:none;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <ul>
+            <li><a class="previous" href="#">&lt;上一页</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a class="active" href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a class="next" href="#">下一页&gt;</a></li>
+        </ul>
+    </div>
+</body>
+</html>

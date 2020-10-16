@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aside-right {
+            position: fixed;
+            top: 100px;
+            right: 60px;
+        }
+
+        .aside-right ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #eaeaea;
+        }
+
+        .aside-right ul li a {
+            text-decoration: none;
+            color: #333;
+            display: inline-block;
+            border-bottom: 1px solid #eaeaea;
+            font-size: 12px;
+            padding-top: 12px;
+            text-align: center;
+            width: 62px;
+            height: 48px;
+        }
+
+        .aside-right ul li a:hover {
+            color: #ff1e32;
+            background-color: #f6f6f6;
+        }
+
+        .aside-right ul li a.top {
+            border-bottom: none;
+        }
+
+        .aside-right ul li a i {
+            width: 20px;
+            height: 20px;
+            display: block;
+            margin: 0 auto 3px;
+        }
+
+        .aside-right ul li .signin i {
+            background-image: url(./img/icon-aside-right-signin.png);
+        }
+        .aside-right ul li .signin:hover i {
+            background-image: url(./img/icon-aside-right-signin-active.png);
+        }
+
+        .aside-right ul li .cart i {
+            background-image: url(./img/icon-aside-right-cart.png);
+        }
+        .aside-right ul li .cart:hover i {
+            background-image: url(./img/icon-aside-right-cart-active.png);
+        }
+
+        .aside-right ul li .phone i {
+            background-image: url(./img/icon-aside-right-phone.png);
+        }
+        .aside-right ul li .phone:hover i {
+            background-image: url(./img/icon-aside-right-phone-active.png);
+        }
+
+        .aside-right ul li .top i {
+            background-image: url(./img/icon-aside-right-top.png);
+        }
+        .aside-right ul li .top:hover i {
+            background-image: url(./img/icon-aside-right-top-active.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="aside-right">
+        <ul>
+            <li>
+                <a href="#" class="signin">
+                    <i></i>
+                    <span>签到</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="cart">
+                    <i></i>
+                    <span>购物车</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="phone">
+                    <i></i>
+                    <span>APP</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="top">
+                    <i></i>
+                    <span>TOP</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
